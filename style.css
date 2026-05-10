@@ -1,0 +1,43 @@
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    background-image: url(headerbackground.jpg);
+    padding: 1em;
+    border-radius: 20px;
+
+}
+
+header a {
+    text-decoration: none;
+    font-family: monospace;
+    color: #4e4e4e;
+    font-size: 2em;
+}
+
+header a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.current {
+    color: rgb(233, 233, 233)
+}
+
+p {
+    color: rgb(233, 233, 233);
+    font-family: monospace;
+    font-size: 2em;
+    padding: 1em;
+
+}

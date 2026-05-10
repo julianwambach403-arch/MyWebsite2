@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 3em;
+        }
+
+        .contact-form {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2em;
+            border-radius: 20px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            font-family: monospace;
+            font-size: 1.2em;
+            padding: 0.8em;
+            border-radius: 10px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-form button {
+            font-family: monospace;
+            font-size: 1.5em;
+            padding: 0.5em;
+            border-radius: 10px;
+            border: none;
+            background-color: #4e4e4e;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: white;
+            color: #4e4e4e;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="current">Contact</a>
+    </header>
+    
+    <h1>Kontaktiere uns</h1>
+
+    <div class="contact-container">
+        <div class="contact-form">
+            <input type="text" placeholder="Dein Name" id="name">
+            <input type="email" placeholder="Deine E-Mail" id="email">
+            <textarea rows="5" placeholder="Deine Nachricht" id="message"></textarea>
+            <button onclick="rickroll()">Nachricht senden</button>
+        </div>
+    </div>
+
+    <script>
+        function rickroll() {
+            // Leitet direkt zum Rickroll-Video weiter, wenn der Button geklickt wird!
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        }
+    </script>
+</body>
+
+</html>
